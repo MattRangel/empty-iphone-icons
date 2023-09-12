@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="apple-touch-icon" sizes="180x180" id="appleIcon">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<meta name="apple-mobile-web-app-title" content="&#65279;">
+</head>
+<style>
+#icon {
+	margin: auto;
+	display: block;
+	border: white 4px solid;
+}
+
+body {
+	background-color: black;
+}
+
+p {
+	color: white;
+}
+
+button {
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+}
+</style>
+
+<body>
+<img id="icon">
+<br>
+<p>Save the image and edit to use as shortcut / Save this page as a bookmark for an empty icon</p>
+<p>Note: If you use the book mark option do not open it again after setting it otherwise it'll reset!</p>
+<button onclick="leave()">Close Page</button>
+</body>
+<script>
+function leave() {
+	close();
+}
+var iconImg = localStorage.getItem('imgData');
+document.getElementById("appleIcon").href = iconImg;
+document.getElementById("icon").src = iconImg;
+</script>
+</body>
+</html>

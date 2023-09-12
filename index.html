@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<meta name="apple-mobile-web-app-title" content="&#65279;">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+</head>
+<body>
+<p>Upload screenshot of homescreen:</p>
+<canvas id="canvas" width="0" height="0" style="display:none;"></canvas>
+<input type="file" onchange="loadPhoto()" id="userFile"></input>
+<button onclick="whichPhone()">Reload Buttons</button>
+<div id="containBox">
+
+<img id="bgPhoto" onload="whichPhone()">
+<div id="buttonContainer"></div>
+
+</div>
+<h2 id="errorTXT"></h2>
+</body>
+</html>

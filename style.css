@@ -1,0 +1,41 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+#containBox {
+	padding: 0em;
+	margin: auto;
+	max-width: 500px;
+	position: relative;
+}
+
+.iconButton {
+	z-index: 2;
+	position: absolute;
+	text-align: center;
+	border-radius: 13px;
+	background-color: #4c9b1f;
+	opacity: 70%;
+	border: #b364e0 solid 4px;
+	font-weight: bold;
+	font-size: larger;
+}
+
+#buttonContainer {
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	top: 0px;
+}
+
+#bgPhoto {
+	width:100%;
+	display:block;
+	z-index:1;
+}
+
+h2 {
+	color: white;
+}
+
